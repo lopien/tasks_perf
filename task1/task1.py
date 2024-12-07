@@ -1,4 +1,7 @@
-n, m = map(int, input().split())
+import sys
+
+n = int(sys.argv[1])
+m = int(sys.argv[2])
 
 def task1():
     entry = 1
@@ -11,3 +14,4 @@ def task1():
     print(path[:-1])
     
 task1()
+
