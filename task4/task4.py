@@ -1,4 +1,6 @@
-nums_file = input('Введите путь к массиву:')
+import sys
+
+nums_file = sys.argv[1]
 file = open(nums_file, "r")
 nums = file.read().split()
 for i, item in enumerate(nums):
@@ -7,7 +9,6 @@ file.close()
 
 def task4():
     nums.sort()
-    print(nums)
     mid = len(nums) // 2
     if len(nums) % 2 == 0:
         res = (nums[mid] + nums[mid-1]) // 2
