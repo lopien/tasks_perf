@@ -1,9 +1,11 @@
-circle_file = input('Введите путь к файлу c координатами и радиусом окружности:')
+import sys
+
+circle_file = sys.argv[1]
 circle = open(circle_file, "r")
 content = circle.read().split()
 circle.close()
 
-dots_file = input('Введите путь к файлу c координатами точек:')
+dots_file = sys.argv[2]
 dots = open(dots_file, "r")
 contents = dots.read().split('\n')
 dots.close()
